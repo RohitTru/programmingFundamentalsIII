@@ -1,5 +1,5 @@
-// cargo ship variant class that extends ship class
-class CargoShip extends ship {
+// CargoShip.java
+public class CargoShip extends Ship {
     private int cargoCapacity;
 
     public CargoShip(String name, String yearBuilt, int cargoCapacity) {
@@ -13,5 +13,10 @@ class CargoShip extends ship {
 
     public void setCargoCapacity(int cargoCapacity) {
         this.cargoCapacity = cargoCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nCargo Capacity: " + cargoCapacity + " tons";
     }
 }

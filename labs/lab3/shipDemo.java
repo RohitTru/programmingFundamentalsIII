@@ -1,3 +1,4 @@
+// ShipDemo.java
 public class shipDemo {
     public static void main(String[] args) {
         Ship[] ships = new Ship[3];
@@ -8,6 +9,7 @@ public class shipDemo {
 
         for (Ship ship : ships) {
             System.out.println(ship.toString());
+            System.out.println("------------------------");
         }
     }
 }

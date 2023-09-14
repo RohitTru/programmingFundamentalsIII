@@ -1,14 +1,13 @@
-public class ship{
+// ship.java
+public class Ship {
     private String name;
     private String yearBuilt;
 
-    // Constructors for out arguments
-
-    public ship(String name, String yearBuilt) {
+    public Ship(String name, String yearBuilt) {
         this.name = name;
         this.yearBuilt = yearBuilt;
     }
-    // Getters and setters for ship name and year built
+
     public String getName() {
         return name;
     }
@@ -23,5 +22,10 @@ public class ship{
 
     public void setYearBuilt(String yearBuilt) {
         this.yearBuilt = yearBuilt;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + "\nYear Built: " + yearBuilt;
     }
 }
