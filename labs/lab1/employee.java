@@ -1,7 +1,11 @@
 import javax.swing.JOptionPane;
 
 // This is the exception that handles any errors derived from faulty salary or bonus computations
-
+class faultyComputationError extends Exception {
+    public faultyComputationError(String errorMessage) {
+        super(errorMessage);
+    }
+}
 
 
 class Employee {
