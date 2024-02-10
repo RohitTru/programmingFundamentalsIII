@@ -15,10 +15,19 @@ class Employee {
     private int grossSalary;
     private double annualBonus;
 
-    // Constructors
-    public Employee(String empName, int empID, int grossSalary, double annualBonus)
+    // Errors (exceptions conditional's)
+    public Employee(String empName, int empID, int grossSalary, double annualBonus) throws faultyComputationError {
+        if (grossSalary <= 0){
+            throw new faultyComputationError("Salary can not be negative");
+        }
+
+        if (annualBonus <= 0) {
+            throw new faultyComputationError(("Bonus can not be negative"));
+        }
+    } 
 
 
 
 
     }
+
